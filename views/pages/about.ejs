@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('../partial/head.ejs') %>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partial/header.ejs') %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <!-- passing data dari index.js -->
+            <h3> <%= bioData %> </h3>
+            <p>Biodata Siswa</p>
+            <p>Name: <%-  dataProfile.name %> </p>
+            <p>Age: <%- dataProfile.age %> </p>
+            <p>Place of Birth: <%- dataProfile.placeOfBirth %> </p>
+            <p>Address: <%- dataProfile.address %> </p>
+            <p>Description: <%- dataProfile.description %> </p>
+        </div>
+    </main>
+
+    <%- include('../partial/footer.ejs') %>
+</body>
+</html>
